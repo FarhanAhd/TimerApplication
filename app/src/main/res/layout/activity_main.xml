@@ -10,16 +10,17 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="280dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginStart="65dp"
         android:layout_marginTop="42dp"
-        android:layout_marginBottom="80dp"
-        android:textSize="32dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="85dp"
         android:text="TIMER"
         android:textAlignment="center"
+        android:textSize="32dp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,10 +29,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="65dp"
-        android:layout_marginBottom="130dp"
+        android:layout_marginBottom="28dp"
         android:onClick="Milkhandler"
         android:text="Milk"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -39,21 +40,21 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
         android:onClick="WaterHandler"
         android:text="Water Motor"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48" />
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="267dp"
+        android:layout_marginBottom="286dp"
         android:onClick="ToastHandler"
         android:text="Bread Toast"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
